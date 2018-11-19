@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patient admission form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel ="stylesheet" href="css_files/index.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/cycle2.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="css_files/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Inconsolata|Roboto|Montserrat|Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">NSU Hospital Management</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  <h1>Patient Application Form</h1>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="background-color: rgb(0,0,0,0.5)">
+    <form action="save.php" method="post">
+    <div class="row">
+    <div class="col-sm-6">
+      <div class="cycle-slideshow"
+        data-cycle-fx="fade"
+        data-cycle-speed="600"
+        data-cycle-timeout="3000">
+          <img src="images/admission8.png" class="slide">
+          <img src="images/admission7.png" class="slide">
+          <img src="images/admission10.png" class="slide">
+          <img src="images/admission9.png" class="slide">
+          <img src="images/admission13.png" class="slide">
+          <img src="images/admission11.png" class="slide">
+          <img src="images/admission12.png" class="slide">
+        </div>
+      </div>
+        <div class="col-sm-6">
+          <p id="DOA" style="font-weight: bold; color: #fff;letter-spacing: 1px">Date of admission</p>
+          <input type ="date" class="form-control" placeholder="Date"name = "" style="margin-top: 20px"><br>
+          <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Name</p>
+          <input type ="text" class="form-control" placeholder="First" name = "first_name"><br>
+          <input type ="text" class="form-control" placeholder="Middle" name = "middle_name"><br>
+          <input type ="text" class="form-control" placeholder="Last" name = "last_name"><br>
+          <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Data of birth:</p>
+          <input type = "date" class="form-control" placeholder="Date of birth" name="DOB"><br>
+          <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Phone</p> 
+          <input type = "text" class="form-control" placeholder="Number1" name="mobile1"><br>
+          <input type = "text" class="form-control" placeholder="Number2" name="mobile2"><br>
+        </div>
+        <div class="col-sm-6">
+          <div clas="form-group">
+            <p id="pre_address" style="font-weight: bold; color: #fff;letter-spacing: 1px">Present Address</p>
+            <input type = "text" class="form-control" placeholder="Street No./Village" name="village"><br>
+            <input type = "text" class="form-control" placeholder="Street name" name="street"><br>
+            <input type = "text" class="form-control" placeholder="Area" name="area"><br>
+            <input type = "text" class="form-control" placeholder="Thana" name="thana"><br>
+            <input type = "text" class="form-control" placeholder="District" name="district"><br>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Permanent Address</p>
+            <input type = "text" class="form-control" placeholder="Street No./Village" name="village"><br>
+            <input type = "text" class="form-control" placeholder="Street name" name="street"><br>
+            <input type = "text" class="form-control" placeholder="Area" name="area"><br>
+            <input type = "text" class="form-control" placeholder="Thana" name="thana"><br>
+            <input type = "text" class="form-control" placeholder="District" name="district"><br>
+            <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Amount:</p>
+            <input type = "text" class="form-control" placeholder="Deposited" name = "amount_deposited"><br>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-weight: bold; color: #fff;letter-spacing: 1px ">Profession</p>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="government_job"> Government job</label>
+          </div>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="private_job"> Private Job</label>
+          </div>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="business"> Business</label>
+          </div>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="farmer"> Farmer</label>
+          </div>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="retired"> Retired</label>
+          </div>
+          <div class="radio">
+            <label><input type = "radio" name="profession" value="others"> Others</label>
+          </div>
+        </div>
+        <div class="col-sm-6" style="margin-bottom: 0px;padding-bottom: 0px">
+          <p style="font-weight: bold; color: #fff;letter-spacing: 1px">Choice</p>
+          <div class="radio">
+            <label><input type = "radio" name = "choice" value = "cabin">  Cabin</label>
+          </div>
+          <div class="radio">
+            <lable><input type = "radio" name = "choice" value = "ward">  Ward</lable>
+          </div><br><br><br><br><br>
+          <p style="color: #fff;letter-spacing: 1px">Signature with date<br>Name:<br>Relation with the patient</p> 
+          <button type="submit" class="btn btn-default" id="btn-submit" style="float: righ; margin-right: 5px ">Submit</button><br><br>
+        </div>
+        <div class="col-sm-12"><p class="footer">&copy Ali's Corporation. All rights reserved. Developed by Ishaq Ali and Fatama Tuj Zohra.</p></div>
+        </div>
+        </div>
+        </form>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+</div>
+
+</body>
+</html>
